@@ -32,6 +32,18 @@ public class MainActivity extends AppCompatActivity {
                 double salario = Double.parseDouble(edt_vlSal.getText().toString());
                 int op = rgroup.getCheckedRadioButtonId();
 
+                if (salario < 1100){
+                    rgroup.check(R.id.rb_40);
+                    salario += (salario * 0.40);
+                } else if(salario >= 1100 && salario < 1500){
+                    rgroup.check(R.id.rb_45);
+                    salario += (salario * 0.45);
+                }else {
+                    rgroup.check(R.id.rb_50);
+                    salario += (salario * 0.50);
+                }
+
+/*
                 if (op == R.id.rb_40){
                     salario = salario + (salario * 0.40);
                 } else if (op == R.id.rb_45){
@@ -39,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                     salario = salario + (salario * 0.50);
                 }
+*/
 
                 AlertDialog.Builder msgSalario = new AlertDialog.Builder(MainActivity.this);
                 msgSalario.setTitle("Novo salaário");
