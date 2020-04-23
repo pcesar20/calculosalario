@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CalculoSalario</string>
+    <string name="digite_o_valor_do_seu_sal_rio">Digite o valor do seu salário</string>
+    <string name="qual_o_percentual">Qual o percentual?</string>
+    <string name="calcular">Calcular</string>
+    <string name="_45">45%</string>
+    <string name="_40">40%</string>
+    <string name="_50">50%</string>
+</resources>

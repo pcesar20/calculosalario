@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_pergunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digite_o_valor_do_seu_sal_rio"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <EditText
+        android:id="@+id/edt_vlSal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_pergunta"
+        android:inputType="numberDecimal"/>
+
+    <RadioGroup
+        android:id="@+id/rgroup"
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:layout_below="@id/text_percentual"
+
+        >
+
+        <RadioButton
+            android:id="@+id/rb_40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_40" />
+
+        <RadioButton
+            android:id="@+id/rb_45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_45" />
+
+        <RadioButton
+            android:id="@+id/rb_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_50" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text_percentual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/qual_o_percentual"
+        android:layout_below="@+id/edt_vlSal"
+       />
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calcular"
+        android:layout_below="@id/rgroup"/>
+
+
+</RelativeLayout>
