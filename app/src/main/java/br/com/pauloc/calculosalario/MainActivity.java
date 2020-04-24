@@ -35,10 +35,10 @@ public class MainActivity extends AppCompatActivity {
                 if (salario < 1100){
                     rgroup.check(R.id.rb_40);
                     salario += (salario * 0.40);
-                } else if(salario >= 1100 && salario < 1500){
+                } if(salario >= 1100 && salario <= 1500){
                     rgroup.check(R.id.rb_45);
                     salario += (salario * 0.45);
-                }else {
+                }if(salario > 1500) {
                     rgroup.check(R.id.rb_50);
                     salario += (salario * 0.50);
                 }
